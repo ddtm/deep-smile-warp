@@ -10,6 +10,10 @@ is very similar and you are free to use it as a reference point.
 
 ## Showcase
 
+<img src="docs/images/1.png" width="128px" height="64px"/> <img src="docs/images/2.png" width="128px" height="64px"/> <img src="docs/images/3.png" width="128px" height="64px"/> <img src="docs/images/4.png" width="128px" height="64px"/>
+<img src="docs/images/5.png" width="128px" height="64px" /> <img src="docs/images/6.png" width="128px" height="64px" /> <img src="docs/images/7.png" width="128px" height="64px"/> <img src="docs/images/8.png" width="128px" height="64px"/>
+<img src="docs/images/9.png" width="128px" height="64px"/> <img src="docs/images/10.png" width="128px" height="64px"/> <img src="docs/images/11.png" width="128px" height="64px"/> <img src="docs/images/12.png" width="128px" height="64px"/>
+
 To showcase general applicability of the approach, I'm using an ever so slightly modified network to handle smile addition and removal
 in the images containg human faces.
 
