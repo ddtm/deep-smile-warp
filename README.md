@@ -19,7 +19,7 @@ in the images containg human faces.
 
 ## Citation
 
-Please cite **DeepWarp** in your publications if it helps your research:
+Please cite the **DeepWarp** paper in your publications if this repo helps your research:
 
     @inproceedings{ganin2016deepwarp,
       title={DeepWarp: Photorealistic image resynthesis for gaze manipulation},
