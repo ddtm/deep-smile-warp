@@ -19,6 +19,8 @@ in the images containg human faces.
 
 ### Model
 
+<img src="docs/images/diagram.png" width="400px"/>
+
 The model (shown above) contains three networks:
   * Transformer *T*. Warps the image given &delta; which is either **+1** (add smile) or **-1** (remove smile)
   * Discriminator *D*. Makes sure that the warped output looks plausible.
