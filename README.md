@@ -17,6 +17,21 @@ is very similar and you are free to use it as a reference point.
 To showcase general applicability of the approach, I'm using an ever so slightly modified network to handle smile addition and removal
 in the images containg human faces.
 
+### Model
+
+<img src="docs/images/diagram.png" width="400px"/>
+
+The model (shown above) contains three networks:
+  * Transformer *T*. Warps the image given &delta; which is either **+1** (add smile) or **-1** (remove smile)
+  * Discriminator *D*. Makes sure that the warped output looks plausible.
+  * Attribute branch *A*. Infers attribute (**1** for "smile", **-1** for "no smile") value given an image.
+
+The training objective is a weighted sum of two components:
+
+![](https://latex.codecogs.com/svg.latex?%5Cmathcal%7BL%7D%28x%2C%20%5Chat%7Bx%7D%2C%20%5Calpha%2C%20%5Cdelta%29%20%3D%20%5Cmathcal%7BL%7D_%7Battr%7D%28x%2C%20%5Chat%7Bx%7D%2C%20%5Calpha%2C%20%5Cdelta%29%20+%20%5Clambda%20%5Cmathcal%7BL%7D_%7BGAN%7D%28x%2C%20%5Chat%7Bx%7D%29)
+
+where the first term is called the *attribute loss* and ![](https://latex.codecogs.com/svg.latex?%5Cmathcal%7BL%7D_%7BGAN%7D) is a standard GAN cost.
+
 ## Citation
 
 Please cite the **DeepWarp** paper in your publications if this repo helps your research:
