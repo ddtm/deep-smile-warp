@@ -21,7 +21,6 @@ local opts = lapp[[
   -f,--snapshot_freq   (default 50)            Snapshots frequency
   -t,--test_freq       (default 20)            Test frequency
   -l,--learning_rate   (default 1e-4)          Learning rate
-  -m,--momentum        (default 0.9)           Momentum
   -b,--batch_size      (default 128)           Batch size
   --beta1              (default 0.5)           Adam: beta_1
   --delta_vec          (default 4)             Dimensionality of delta vec
@@ -233,7 +232,6 @@ local optimizer = {
   state = {
     learningRate = opts.learning_rate,
     weightDecay = 0.0,
-    momentum = opts.momentum,
     beta1 = opts.beta1
   }
 }
